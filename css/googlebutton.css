@@ -1,0 +1,161 @@
+.google-button {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow 0 2px 4px 0px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: background-color .218s, border-color .218s, box-shadow .218s;
+    transition: background-color .218s, border-color .218s, box-shadow .218s;
+    -webkit-user-select: none;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    color: #262626;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+}
+.google-button:hover {
+    -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3);
+    box-shadow: 0 0 3px 3px rgba(66, 133, 244, .3)
+}
+.google-buttonRed,
+.google-buttonBlue {
+    border: none;
+    color: #fff
+}
+.google-buttonRed {
+    background-color: #dc4e41
+}
+.google-buttonRed:active {
+    background-color: #c53829
+}
+.google-buttonBlue {
+    background-color: #4285f4
+}
+.google-buttonBlue:hover {
+    background-color: #4285f4
+}
+.google-buttonBlue:active {
+    background-color: #3367d6
+}
+.google-buttonLightBlue {
+    background-color: #fff;
+    color: #757575
+}
+.google-buttonLightBlue:active {
+    background-color: #eee;
+    color: #6d6d6d
+}
+.google-buttonWhite {
+    background-color: #fff;
+    color: #dc4e41
+}
+.google-buttonWhite:active {
+    background-color: #eee
+}
+.google-buttonWhite path {
+    fill: #dc4e41
+}
+.google-buttonIcon {
+    float: left
+}
+.google-buttonBlue .google-buttonIcon {
+    background-color: #fff;
+    -webkit-border-radius: 1px;
+    border-radius: 1px
+}
+.google-buttonSvg {
+    display: block
+}
+.google-buttonContents {
+    font-family: Roboto, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .21px;
+    margin-left: 6px;
+    margin-right: 6px;
+    vertical-align: top
+}
+#signed_in{
+  display: none;
+}
+.google-buttonContentWrapper {
+    height: 100%;
+    width: 100%
+}
+.google-buttonGreen .google-buttonContentWrapper,
+.google-buttonRed .google-buttonContentWrapper,
+.google-buttonBlue .google-buttonContentWrapper,
+.google-buttonDarkGray .google-buttonContentWrapper,
+.google-buttonGrayedOut .google-buttonContentWrapper {
+    border: 1px solid transparent
+}
+.google-buttonErrorWrapper,
+.google-buttonWorkingWrapper {
+    display: none;
+    height: 100%;
+    width: 100%
+}
+.google-buttonErrorIcon,
+.google-buttonWorkingIcon {
+    margin-left: auto;
+    margin-right: auto
+}
+.google-buttonErrorState,
+.google-buttonWorkingState {
+    border: 1px solid #d5d5d5;
+    border: 1px solid rgba(0, 0, 0, .17);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .05);
+    color: #262626
+}
+.google-buttonErrorState:hover,
+.google-buttonWorkingState:hover {
+    border: 1px solid #aaa;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .1)
+}
+.google-buttonErrorState:active,
+.google-buttonWorkingState:active {
+    border: 1px solid #aaa;
+    border: 1px solid rgba(0, 0, 0, .25);
+    -webkit-box-shadow: inset 0 1px 0 #ddd;
+    box-shadow: inset 0 1px 0 #ddd;
+    color: #262626
+}
+.google-buttonWorkingState,
+.google-buttonWorkingState:hover {
+    background-color: #f5f5f5
+}
+.google-buttonWorkingState:active {
+    background-color: #e5e5e5
+}
+.google-buttonErrorState,
+.google-buttonErrorState:hover {
+    background-color: #fff
+}
+.google-buttonErrorState:active {
+    background-color: #e5e5e5
+}
+.google-buttonWorkingState .google-buttonWorkingWrapper,
+.google-buttonErrorState .google-buttonErrorWrapper {
+    display: block
+}
+.google-buttonErrorState .google-buttonContentWrapper,
+.google-buttonWorkingState .google-buttonContentWrapper,
+.google-buttonErrorState .google-buttonWorkingWrapper {
+    display: none
+}
+.-webkit-keyframes google-buttonWorkingIconPathSpinKeyframes {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+}

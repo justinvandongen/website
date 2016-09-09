@@ -1,0 +1,356 @@
+/**********general**********
+
+p {
+  line-height: 2rem;
+}
+
+/*magister icons*/
+@font-face {
+  font-family: "magistersymbolsnormal";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/magistersymbolsnormal/magistersymbols-webfont.eot");
+  src: url("../fonts/magistersymbolsnormal/magistersymbols-webfont.woff") format("woff"), url("../fonts/magistersymbolsnormal/magistersymbols-webfont.ttf") format("truetype"), url("../fonts/magistersymbolsnormal/magistersymbols-webfont.svg#magistersymbolsnormal") format("svg");
+}
+
+.magister-icon{
+  font-family: "magistersymbolsnormal";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  margin: 3px 0;
+  color: #333333;
+  font-size: 24px;
+}
+/*verander standaart kleuren*/
+.no-highlight{
+  color: rgba(0, 0, 0, 0.87)
+}
+
+.btn, .btn-large{
+  background-color: #0096db;
+}
+.btn:hover, .btn-large:hover{
+  background-color: #0096db;
+}
+
+.secondary-content{
+  color: #0096db;
+}
+
+/*toast/snackbar*/
+@media only screen and (min-width : 601px) and (max-width : 1260px) {
+  .toast {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (min-width : 1261px) {
+  .toast {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (min-width : 601px) and (max-width : 1260px) {
+  #toast-container {
+    min-width: 100%;
+    bottom: 0%;
+    top: 90%;
+    right: 0%;
+    left: 0%;
+  }
+}
+
+@media only screen and (min-width : 1261px) {
+  #toast-container {
+    min-width: 100%;
+    bottom: 0%;
+    top: 90%;
+    right: 0%;
+    left: 0%;
+  }
+}
+/********input-form**************/
+.input-form h1{
+  font-size: 3.2rem;
+  font-family: Roboto-Bold, sans-serif;
+}
+@media only screen and (max-height : 720px) {
+  .input-form h1{
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-height : 600px) {
+  .input-form h1{
+    font-size: 2.2rem;
+  }
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #0096db;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #0096db;
+  box-shadow: 0 1px 0 0 #0096db;
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right: 2px solid #0096db;
+    border-bottom: 2px solid #0096db;
+}
+/*********navigatie*********/
+nav{
+  font-family: tahoma, sans-serif;
+  background-color: #0096db;
+}
+
+nav ul a,
+nav .brand-logo,
+nav .material-icons {
+  color: white;
+}
+
+#registreren{
+  height: 64px;
+  border-right: 1px solid #4faeff;
+}
+
+#logo-container{
+  margin-left: 6px;
+}
+
+/*********header*********/
+.header{
+  color: #333333;
+}
+#start-button{
+  background-color: #0096db;
+}
+/*********inhoud*********/
+/*container*/
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+/*icons*/
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.material-icons{
+  color: #333333;
+}
+
+/*breack points*/
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+/*********footer*********/
+footer.page-footer {
+  margin: 0;
+}
+
+/*********login form*********
+#login-pagina{
+  width: 450px;
+  margin-top: 130px;
+}
+
+@media only screen and (max-height : 720px) {
+  #login-pagina{
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-height : 600px) {
+  #login-pagina{
+    margin-top: 0;
+    width: 390px;
+  }
+}
+
+
+@media only screen and (max-width : 450px) {
+  #login-pagina{
+    width: 300px;
+    margin-top: 0px;
+  }
+}
+
+/*********register form*********/
+#register-pagina{
+  width: 450px;
+  margin-top: 130px;
+}
+
+/*google button*/
+
+.google-login {
+  display: inline-block;
+  margin-left: auto;
+  background: white;
+  color: #444;
+  width: 346px;
+  border-radius: 5px;
+  border: thin solid #888;
+  box-shadow: 1px 1px 1px grey;
+  white-space: nowrap;
+}
+#google-login:hover {
+  cursor: pointer;
+}
+span.icon {
+  background: url('../photos/google-logo.png') transparent 5px 50% no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 44px;
+  height: 42px;
+}
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 47px;
+  padding-right: 42px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*breakpoints*/
+@media only screen and (max-height : 720px) {
+  #register-pagina{
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-height : 600px) {
+  #register-pagina{
+    margin-top: 0;
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  #register-pagina{
+    width: 300px;
+    margin-top: 0px;
+  }
+}
+/*********loggedin*********/
+
+/*content*/
+.content{
+  margin-left: 60px;
+}
+
+@media only screen and (max-width : 994px) {
+  .content{
+    margin-left: 0px;
+  }
+}
+/*gekleurde icons*/
+i.good{
+  color: #0096db;
+}
+
+i.error{
+  color: #db0004;
+}
+
+/*linker navigatie*/
+.fixed-side-nav{
+  margin-top: 10px;
+  width: 60px;
+  top: auto;
+  font-size: 15px;
+}
+
+.fixed-side-nav a{
+  padding: 0 17px !important;
+}
+
+.fixed-side-nav i{
+  margin-top: 20px;
+}
+
+.current{
+  background-color: #0096db;
+}
+.current i{
+  color: white;
+}
+
+.waves-effect.waves-blue .waves-ripple{
+  background-color: rgba(0, 150, 219, 1);
+}
+
+/*********dashboard*********/
+/*had geen custom css nodig THANKS materializecss :)*/
+
+/*********settings*********/
+
+/*show more/less*/
+.show-more, .show-less{
+  cursor: pointer;
+}
+
+.more, .show-less{
+  display: none;
+}

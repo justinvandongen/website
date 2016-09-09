@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>dashboard - magister2apps</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="brand-logo">magister2apps</a>
+      <ul class="right hide-on-med-and-down">
+        <li id="registreren"><a href="instellingen.html">Voornaam Achternaam</a></li>
+        <li id="inloggen"><a href="../index.html" id="login">uitloggen</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="instellingen.html">Voornaam Achternaam</a></li>
+        <li id="inloggen"><a href="../index.html" id="login-small">uitloggen</a>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <ul class="side-nav fixed fixed-side-nav">
+    <li class="bold current">
+      <a href="dashboard.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="dashboard">
+        <i class="material-icons">dashboard</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="notificaties.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="notificaties">
+        <i class="material-icons">message</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="services.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="services">
+        <i class="material-icons">storage</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="logs.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="logs">
+        <i class="material-icons">archive</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="instellingen.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="instellingen">
+        <i class="material-icons">settings</i>
+      </a>
+    </li>
+  </ul>
+
+  <div class="row content">
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">services</span>
+        </div>
+          <ul class="collection">
+            <li class="collection-item">
+              <a href="apps/magister2pushbullet.html" class="no-highlight">
+                magister2pushbullet<span class="secondary-content"><i class="material-icons good">check</i></span>
+              </a>
+            </li>
+            <li class="collection-item">
+              <a href="apps/magister2googlecalendar.html" class="no-highlight">
+                magister2googlecalendar<span class="secondary-content"><i class="material-icons error">priority_high</i></span>
+              </a>
+            </li>
+            <li class="collection-item">
+              <a href="apps/magister2googledrive.html" class="no-highlight">
+                magister2googledrive<span class="secondary-content"><i class="material-icons good">check</i></span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">notificaties</span>
+        </div>
+          <ul class="collection">
+            <li class="collection-item">
+              <div class="chip">
+                <img src="../photos/pushbullet-logo.png">je het een 7,1 voor proefwerk nederlands!
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="chip">
+                <img src="../photos/googledrive-logo.png">werkstuk.pdf
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="chip">
+                <img src="../photos/pushbullet-logo.png">Rino: Beste Lorenzo, Lorem ipsum dolor sit...
+              </div>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">logs</span>
+        </div>
+          <ul class="collection">
+            <li class="collection-item">
+              nieuw cijfer voor nederlands<span class="secondary-content">20:10</span>
+            </li>
+            <li class="collection-item">
+              nieuw bestand elo<span class="secondary-content">18:40</span>
+            </li>
+            <li class="collection-item">
+              kan niet verbinden met googlecalendar<span class="secondary-content">17:20</span>
+            </li>
+            <li class="collection-item">
+              kan niet verbinden met magister<span class="secondary-content">16:33</span>
+            </li>
+            <li class="collection-item">
+              roosterwijziging duits<span class="secondary-content">13:55</span>
+            </li>
+            <li class="collection-item">
+              bericht van Rino<span class="secondary-content">14 juli</span>
+            </li>
+
+          </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+
+  </body>
+</html>

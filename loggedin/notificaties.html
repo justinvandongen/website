@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>notificaties - magister2apps</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="brand-logo">magister2apps</a>
+      <ul class="right hide-on-med-and-down">
+        <li id="registreren"><a href="settings.html">Voornaam Achternaam</a></li>
+        <li id="inloggen"><a href="#" id="login">uitloggen</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="settings.html">Voornaam Achternaam</a></li>
+        <li id="inloggen"><a href="#" id="login-small">uitloggen</a>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <ul class="side-nav fixed fixed-side-nav">
+    <li class="bold">
+      <a href="dashboard.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="dashboard">
+        <i class="material-icons">dashboard</i>
+      </a>
+    </li>
+    <li class="bold current">
+      <a href="notificaties.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="notificaties">
+        <i class="material-icons">message</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="services.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="services">
+        <i class="material-icons">storage</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="logs.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="logs">
+        <i class="material-icons">archive</i>
+      </a>
+    </li>
+    <li class="bold">
+      <a href="instellingen.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="instellingen">
+        <i class="material-icons">settings</i>
+      </a>
+    </li>
+  </ul>
+
+  <div class="row content settings">
+    <div class="col s12 m12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">
+            notificaties
+            <i class="material-icons waves-effect waves-blue tooltipped"
+            data-position="right" data-delay="50"
+            data-tooltip="alle events die verwerkt zijn">
+            help</i>
+          </span>
+        <ul class="collection">
+          <li id="id1" class="collection-item avatar">
+            <a href="//pushbullet.com"><img src="../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="open in pushbullet"></a>
+            <span class="title">notificatie</span>
+            <p>Je hebt een 7,1 voor proefwerk nederlands!</p>
+            <a href="//mijn.magister.net/api/personen/<persoon_id>/berichten/<berichten_id>" class="secondary-content waves-effect waves-blue tooltipped" data-position="left" data-delay="50" data-tooltip="open in magister berichten">
+              <i class="magister-icon">V</i>
+            </a>
+          </li>
+          <li id="id2" class="collection-item avatar">
+            <a href="//drive.google.com"><img src="../photos/googledrive-logo.png" alt="" class="circle waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="open in google drive"></a>
+            <span class="title">Nieuw bestand ELO</span>
+            <p>werkstuk.pdf</p>
+            <a href="//mijn.magister.net/api/personen/<persoon_id>/bronnen/<bron_id>/content" class="secondary-content waves-effect waves-blue tooltipped" data-position="left" data-delay="50" data-tooltip="open in magister ELO">
+              <i class="magister-icon">T</i>
+            </a>
+          </li>
+          <li id="id3" class="collection-item avatar">
+            <a href="//pushbullet.com"><img src="../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="open in pushbullet"></a>
+            <span class="title">Bericht van Rino:</span>
+            <p>Beste Lorenzo, <br>
+              <a class="show-more" onclick="show_more('id3');">Show more</a>
+              <span class="more"><br>
+                Omdat ik er zo van hou: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+              Vriendelijke groet,<br>
+              Rino
+              </span>
+              <a class="show-less" onclick="show_less('id3');"><br>Show less</a>
+            </p>
+            <a href="//mijn.magister.net/api/personen/<persoon_id>/berichten/<berichten_id>" class="secondary-content waves-effect waves-blue tooltipped" data-position="left" data-delay="50" data-tooltip="open in magister berichten">
+              <i class="magister-icon">V</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script>
+  function show_more(id){
+    $("#"+id).find(".more").show();
+    $("#"+id).find(".show-more").hide();
+    $("#"+id).find(".show-less").show();
+  };
+  function show_less(id){
+    $("#"+id).find(".more").hide();
+    $("#"+id).find(".show-more").show();
+    $("#"+id).find(".show-less").hide();
+  };
+  </script>
+
+  </body>
+</html>

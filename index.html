@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>magister2apps</title>
+
+  <script src="https://apis.google.com/js/api:client.js"></script>
+  <script src="js/start.js"></script>
+  <script>alert("dit is een demo klik op registreren om verder te gaan")</script>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav role="navigation">
+    <div class="nav-wrapper">
+      <a id="logo-container" href="#" class="brand-logo">magister2apps</a>
+      <ul class="right hide-on-med-and-down">
+        <li id="registreren"><a href="register.html">registreren</a></li>
+        <li id="inloggen"><a href="#" onclick="werktNiet()" id="login">inloggen</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="register.html">registreren</a></li>
+        <li id="inloggen"><a href="#" onclick="werktNiet()" id="login-small">inloggen</a>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center">Verbind magister met apps die je al gebruikt</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Synchroniseer magister berichten, agenda met andere apps zoals pushbullet en google agenda</h5>
+        </div>
+        <div class="row center">
+          <a href="register.html" id="start-button" class="btn-large waves-effect waves-light">registreren</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">lock</i></h2>
+            <h5 class="center">Veilig</h5>
+
+            <p class="light">Alle gegevens worden op onze beveiligde server opgeslagen en er worden alleen apikeys opgeslagen geen volledige wachtwoorden. U kunt hier meer over lezen in de <a href="voorwaarden.html">voorwaarden</a></p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">school</i></h2>
+            <h5 class="center">Door leerlingen voor leerlingen</h5>
+
+            <p class="light">Omdat wij magister2googlecalendar dagelijks gebruiken weten wij heel goed wat je echt nodig hebt.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <a href="https://github.com/coollorenzo/roosterweb2googlecalendar">
+              <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+              <h5 class="center no-highlight">Open Source</h5>
+            </a>
+
+            <p class="light">magister2google calendar is volledig opensource, de sourcecode is te vinden op <a href="https://github.com/coollorenzo/roosterweb2googlecalendar">github.</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
