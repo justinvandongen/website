@@ -47,6 +47,9 @@ p {
   color: #0096db;
 }
 
+.material-icons{
+  color: #333333;
+}
 /*toast/snackbar*/
 @media only screen and (min-width : 601px) and (max-width : 1260px) {
   .toast {
@@ -162,7 +165,7 @@ nav .material-icons {
 #start-button{
   background-color: #0096db;
 }
-/*********inhoud*********/
+/*********home page*********/
 /*container*/
 .parallax-container {
   min-height: 380px;
@@ -181,11 +184,8 @@ nav .material-icons {
 .icon-block .material-icons {
   font-size: inherit;
 }
-.material-icons{
-  color: #333333;
-}
 
-/*breack points*/
+/*break points*/
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
@@ -329,13 +329,7 @@ i.error{
 
 /*********service detailed*********/
 
-.service-detailed .card-title{
-  line-height: normal !important;
-  min-height: 84px;
-  padding-left: 65px;
-  position: relative;
-}
-
+/* card-title met foto en info */
 .service-detailed .card-title .foto{
   width: 50px;
   height: 50px;
@@ -343,11 +337,71 @@ i.error{
   position: absolute;
 }
 
-.service-detailed .card-title .titel{
-
+.service-detailed .card-title .icon{
+  left: 0;
+  position: absolute;
+  font-size: 50px;
 }
 
-.service-detailed .card-title .beschrijving{
+.service-detailed .card-title{
+  line-height: normal !important;
+  min-height: 84px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.service-detailed .card-info{
   font-size: 15px;
   padding-left: 65px;
+}
+
+/***card-child***/
+.row.card-child .col{
+  padding: 0;
+}
+
+.card-child .card-content{
+  padding: 15px 15px 0 15px;
+}
+
+/*card-title met foto en info als card-child*/
+.service-detailed .card-child .card-title .foto{
+  width: 40px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+}
+
+.service-detailed .card-child .card-title .icon{
+  left: 0;
+  margin-top: 2.7px;
+  position: absolute;
+  font-size: 45px;
+}
+
+.service-detailed .card-child .card-title{
+  line-height: normal !important;
+  min-height: 84px;
+  padding-left: 57px;
+  position: relative;
+}
+
+.service-detailed .card-child .card-titel{
+  font-size: 20px;
+}
+
+.service-detailed .card-child .card-info{
+  font-size: 14px;
+  padding-left: 57px;
+}
+
+/*collection in card-child*/
+.card-child .card-content .collection.full-size{
+  margin-top: -10px;
+}
+
+/*collection in card*/
+.card .collection.full-size{
+  border-left: 0;
+  border-radius: 0;
 }

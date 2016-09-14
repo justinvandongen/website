@@ -38,4 +38,7 @@ function signOut() {
 function werktNiet(){
   alert("deze functie werkt niet in de demo");
 }
+function WIP(){
+  alert("hier word aan gewerkt \n wil je mee helpen? ga dan naar onze github pagina");
+}
 // TODO: inloggen google https://developers.google.com/identity/sign-in/web/sign-in

@@ -1,11 +1,6 @@
-<!--
-TODO:
-/-terug knop
-/-titel
-/-beschrijving functie
--status
--accounts die worden gebruikt met link naar instellingen van deze accounts
--log
+<!--TODO:
+-clean code (css and klassnames card)
+-uitlijning fixen
 -->
 
 
@@ -23,6 +18,7 @@ TODO:
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script>alert('DE UITLJNING WORD ZO SNEL MOGELIJK GEFIXT!!!! \n dit is de uitgebruide weergave van de service')</script>
 </head>
 <body>
   <nav role="navigation">
@@ -54,10 +50,58 @@ TODO:
         <div class="card-content">
           <span class="card-title">
             <a href="magister2pushbullet.html"><img src="../../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle foto"></a>
-            <span class="titel">magister2pushbullet</span>
-            <p class="beschrijving">Synchroniseert je magister berichten met pushbullet.</p>
+            <span class="card-titel">magister2pushbullet</span>
+            <p class="card-info">Synchroniseert je magister berichten met pushbullet.</p>
           </span>
-          TODO
+          <div class="row card-child">
+            <div class="col s6 m6">
+              <div class="card" style="height:270px;">
+                <div class="card-content">
+                  <span class="card-title">
+                    <a href="magister2pushbullet.html"><i class="material-icons icon">archive</i></a>
+                    <span class="card-titel">log</span>
+                    <p class="card-info">actief sinds 31-08-2016 20:30 zonder problemen</p>
+                  </span>
+                </div>
+                <ul class="collection full-size">
+                  <li class="collection-item">
+                    nieuw cijfer proefwerk nederlands<span class="secondary-content">17:20</span>
+                  </li>
+                  <li class="collection-item">
+                    	bericht van rino<span class="secondary-content">13:55</span>
+                  </li>
+                  <li class="collection-item">
+                    service gestart<span class="secondary-content">31 aug 2016</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col s6 m6">
+              <div class="card" style="height:270px;">
+                <div class="card-content">
+                  <span class="card-title">
+                    <a href="magister2pushbullet.html"><i class="material-icons icon">settings</i></a>
+                    <span class="card-titel">instellingen</span>
+                    <p class="card-info">actief sinds 31-08-2016 20:30 zonder problemen</p>
+                  </span>
+                </div>
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <img src="../../photos/google-logo.png" alt="" class="circle">
+                    <span class="title">Google</span>
+                    <p>Voornaam Achternaam</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <img src="../../photos/magister-logo.png" alt="" class="circle">
+                    <span class="title">Magister</span>
+                    <p>Voornaam Achternaam</p>
+                    <a onclick="werktNiet()" href="#" class="secondary-content"><i class="material-icons">settings</i></a>
+                    <!--account settings menu-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
