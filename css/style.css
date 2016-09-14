@@ -207,33 +207,6 @@ footer.page-footer {
   margin: 0;
 }
 
-/*********login form*********
-#login-pagina{
-  width: 450px;
-  margin-top: 130px;
-}
-
-@media only screen and (max-height : 720px) {
-  #login-pagina{
-    margin-top: 50px;
-  }
-}
-
-@media only screen and (max-height : 600px) {
-  #login-pagina{
-    margin-top: 0;
-    width: 390px;
-  }
-}
-
-
-@media only screen and (max-width : 450px) {
-  #login-pagina{
-    width: 300px;
-    margin-top: 0px;
-  }
-}
-
 /*********register form*********/
 #register-pagina{
   width: 450px;
@@ -316,10 +289,11 @@ i.error{
 
 /*linker navigatie*/
 .fixed-side-nav{
-  margin-top: 10px;
+  margin-top: 0.5rem;
   width: 60px;
   top: auto;
   font-size: 15px;
+  border-top-right-radius: 2px;
 }
 
 .fixed-side-nav a{
@@ -344,8 +318,6 @@ i.error{
 /*********dashboard*********/
 /*had geen custom css nodig THANKS materializecss :)*/
 
-/*********settings*********/
-
 /*show more/less*/
 .show-more, .show-less{
   cursor: pointer;
@@ -353,4 +325,29 @@ i.error{
 
 .more, .show-less{
   display: none;
+}
+
+/*********service detailed*********/
+
+.service-detailed .card-title{
+  line-height: normal !important;
+  min-height: 84px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.service-detailed .card-title .foto{
+  width: 50px;
+  height: 50px;
+  left: 0;
+  position: absolute;
+}
+
+.service-detailed .card-title .titel{
+
+}
+
+.service-detailed .card-title .beschrijving{
+  font-size: 15px;
+  padding-left: 65px;
 }

@@ -1,22 +1,36 @@
+<!--
+TODO:
+/-terug knop
+/-titel
+/-beschrijving functie
+-status
+-accounts die worden gebruikt met link naar instellingen van deze accounts
+-log
+-->
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>notificaties - magister2apps</title>
+  <title>magister2apps - magister2apps</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav role="navigation">
     <div class="nav-wrapper">
-      <a id="logo-container" href="#" class="brand-logo">magister2apps</a>
+      <a id="logo-container" href="../index.html" class="brand-logo">magister2apps</a>
       <ul class="right hide-on-med-and-down">
         <li id="registreren"><a href="settings.html">Voornaam Achternaam</a></li>
-        <li id="inloggen"><a href="#" id="login">uitloggen</a></li>
+        <li id="inloggen"><a href="../../index.html" id="login">uitloggen</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -26,58 +40,25 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
   <ul class="side-nav fixed fixed-side-nav">
     <li class="bold">
-      <a href="dashboard.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="dashboard">
-        <i class="material-icons">dashboard</i>
-      </a>
-    </li>
-    <li class="bold">
-      <a href="notificaties.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="notificaties">
-        <i class="material-icons">message</i>
-      </a>
-    </li>
-    <li class="bold current">
-      <a href="services.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="services">
-        <i class="material-icons">storage</i>
-      </a>
-    </li>
-    <li class="bold">
-      <a href="logs.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="logs">
-        <i class="material-icons">archive</i>
-      </a>
-    </li>
-    <li class="bold">
-      <a href="instellingen.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="instellingen">
-        <i class="material-icons">settings</i>
+      <a href="../services.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="terug">
+        <i class="material-icons">arrow_back</i>
       </a>
     </li>
   </ul>
 
-  <div class="row content settings">
+  <div class="row content service-detailed">
     <div class="col s12 m12">
       <div class="card">
         <div class="card-content">
           <span class="card-title">
-            services
-            <i class="material-icons waves-effect waves-blue tooltipped"
-            data-position="right" data-delay="50"
-            data-tooltip="alle services die aan je account gekoppeld zijn">
-            help</i>
+            <a href="magister2pushbullet.html"><img src="../../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle foto"></a>
+            <span class="titel">magister2pushbullet</span>
+            <p class="beschrijving">Synchroniseert je magister berichten met pushbullet.</p>
           </span>
-        <ul class="collection">
-          <li id="id1" class="collection-item avatar">
-            <a href="services/magister2pushbullet.html"><img src="../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="uitgebrijde weergave"></a>
-            <span class="title">magister2pushbullet</span>
-            <p>actief sinds 31-08-2016 20:30 zonder problemen</p>
-            <a href="//mijn.magister.net/api/personen/<persoon_id>/berichten/<berichten_id>" class="secondary-content">
-              <i class="material-icons good">check</i>
-            </a>
-          </li>
-
-        </ul>
-      </div>
+          TODO
+        </div>
       </div>
     </div>
   </div>
@@ -85,7 +66,7 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../js/materialize.js"></script>
+  <script src="../../js/materialize.js"></script>
   <script>
   function show_more(id){
     $("#"+id).find(".more").show();
