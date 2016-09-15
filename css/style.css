@@ -32,8 +32,10 @@ p {
   font-size: 24px;
 }
 /*verander standaart kleuren*/
-.no-highlight{
-  color: rgba(0, 0, 0, 0.87)
+
+/*blauw*/
+.blue{
+  background-color: #0096db !important
 }
 
 .btn, .btn-large{
@@ -47,9 +49,16 @@ p {
   color: #0096db;
 }
 
+/*grijs*/
 .material-icons{
   color: #333333;
 }
+
+/*overige*/
+.no-highlight{
+  color: rgba(0, 0, 0, 0.87)
+}
+
 /*toast/snackbar*/
 @media only screen and (min-width : 601px) and (max-width : 1260px) {
   .toast {
@@ -140,7 +149,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
 /*********navigatie*********/
 nav{
   font-family: tahoma, sans-serif;
-  background-color: #0096db;
 }
 
 nav ul a,
@@ -162,13 +170,10 @@ nav .material-icons {
 .header{
   color: #333333;
 }
-#start-button{
-  background-color: #0096db;
-}
 /*********home page*********/
 /*container*/
 .parallax-container {
-  min-height: 380px;
+  min-height: 410px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
