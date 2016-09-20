@@ -1,5 +1,5 @@
 # magister2apps
-Dit is de statische website voor [magister2apps](magister2apps.nl) de site om je magister met andere apps te koppelen.
+Dit is de statische website voor [magister2apps](//magister2apps.nl) de site om je magister met andere apps te koppelen.
 
 **TODO:**
 - [ ] uitlijning detailed view services verbeteren
