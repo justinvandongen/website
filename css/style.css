@@ -361,7 +361,11 @@ i.error{
 }
 
 /***card-child***/
-.row.card-child .col{
+.row.card-child .col.linker-child{
+  padding: 0 10px 0 0;
+}
+
+.row.card-child .col.rechter-child{
   padding: 0;
 }
 
@@ -370,32 +374,32 @@ i.error{
 }
 
 /*card-title met foto en info als card-child*/
-.service-detailed .card-child .card-title .foto{
+.card-child .card-title .foto{
   width: 40px;
   height: 40px;
   left: 0;
   position: absolute;
 }
 
-.service-detailed .card-child .card-title .icon{
+.card-child .card-title .icon{
   left: 0;
   margin-top: 2.7px;
   position: absolute;
   font-size: 45px;
 }
 
-.service-detailed .card-child .card-title{
+.card-child .card-title{
   line-height: normal !important;
   min-height: 84px;
   padding-left: 57px;
   position: relative;
 }
 
-.service-detailed .card-child .card-titel{
+.card-child .card-titel{
   font-size: 20px;
 }
 
-.service-detailed .card-child .card-info{
+.card-child .card-info{
   font-size: 14px;
   padding-left: 57px;
 }
@@ -405,8 +409,13 @@ i.error{
   margin-top: -10px;
 }
 
+.card.full-size-collection .card-content{
+  border-radius: 0;
+}
+
 /*collection in card*/
-.card .collection.full-size{
+.card.full-size-collection .collection{
   border-left: 0;
+  border-right: 0;
   border-radius: 0;
 }

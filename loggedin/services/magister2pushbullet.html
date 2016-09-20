@@ -1,29 +1,24 @@
 <!--TODO:
 -clean code (css and klassnames card)
--uitlijning fixen
 -->
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>magister2apps - magister2apps</title>
+  <title>magister2pushbullet - magister2apps</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script>alert('DE UITLJNING WORD ZO SNEL MOGELIJK GEFIXT!!!! \n dit is de uitgebruide weergave van de service')</script>
+  <script src="../../js/start.js"></script>
 </head>
 <body>
   <nav role="navigation" class="blue">
     <div class="nav-wrapper">
-      <a id="logo-container" href="../index.html" class="brand-logo">magister2apps</a>
+      <a id="logo-container" href="../../index.html" class="brand-logo">magister2apps</a>
       <ul class="right hide-on-med-and-down">
         <li id="registreren"><a href="settings.html">Voornaam Achternaam</a></li>
         <li id="inloggen"><a href="../../index.html" id="login">uitloggen</a></li>
@@ -49,21 +44,21 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title">
-            <a href="magister2pushbullet.html"><img src="../../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle foto"></a>
+            <img src="../../photos/pushbullet-logo.png" alt="pushbullet-logo" class="circle foto">
             <span class="card-titel">magister2pushbullet</span>
-            <p class="card-info">Synchroniseert je magister berichten met pushbullet.</p>
+            <p class="card-info">Synchroniseert magister berichten met pushbullet.</p>
           </span>
           <div class="row card-child">
-            <div class="col s6 m6">
-              <div class="card" style="height:270px;">
+            <div class="col s6 m6 linker-child">
+              <div class="card full-size-collection" style="height:270px;">
                 <div class="card-content">
                   <span class="card-title">
-                    <a href="magister2pushbullet.html"><i class="material-icons icon">archive</i></a>
+                    <a href="../logs.html"><i class="material-icons icon">archive</i></a>
                     <span class="card-titel">log</span>
                     <p class="card-info">actief sinds 31-08-2016 20:30 zonder problemen</p>
                   </span>
                 </div>
-                <ul class="collection full-size">
+                <ul class="collection">
                   <li class="collection-item">
                     nieuw cijfer proefwerk nederlands<span class="secondary-content">17:20</span>
                   </li>
@@ -76,11 +71,11 @@
                 </ul>
               </div>
             </div>
-            <div class="col s6 m6">
-              <div class="card" style="height:270px;">
+            <div class="col s6 m6 rechter-child">
+              <div class="card full-size-collection" style="height:270px;">
                 <div class="card-content">
                   <span class="card-title">
-                    <a href="magister2pushbullet.html"><i class="material-icons icon">settings</i></a>
+                    <a href="../instellingen.html"><i class="material-icons icon">settings</i></a>
                     <span class="card-titel">instellingen</span>
                     <p class="card-info">actief sinds 31-08-2016 20:30 zonder problemen</p>
                   </span>
@@ -96,7 +91,6 @@
                     <span class="title">Magister</span>
                     <p>Voornaam Achternaam</p>
                     <a onclick="werktNiet()" href="#" class="secondary-content"><i class="material-icons">settings</i></a>
-                    <!--account settings menu-->
                   </li>
                 </ul>
               </div>
