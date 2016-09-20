@@ -178,10 +178,17 @@ nav .material-icons {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
-
+/*tekst*/
+.section.no-pad-bot {
+  padding-top: 55px;
+}
+.parallax-container .section {
+  width: 100%;
+}
+/*email form*/
+.subscribe{
+  margin-top: 1.65rem;
+}
 /*icons*/
 .icon-block {
   padding: 0 15px;
