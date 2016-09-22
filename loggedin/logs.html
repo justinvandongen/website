@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>logs - magister2apps</title>
+  <title>Logs - magister2apps</title>
 
+  <script src="js/start.js"></script>
+  <script>alert('hier zie je een log van alle informatie \n word misschien geschrapt omdat het te ingewikkelt is ben je het hier mee eens? ga naar de poll bit.ly/log-poll')</script>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script>alert('hier zie je een log van alle informatie \n word misschien geschrapt omdat het te ingewikkelt is ben je het hier mee eens? ga naar de poll bit.ly/log-poll')</script>
 </head>
 <body>
   <nav role="navigation" class="blue">
     <div class="nav-wrapper">
       <a id="logo-container" href="../index.html" class="brand-logo">magister2apps</a>
       <ul class="right hide-on-med-and-down">
-        <li id="registreren"><a href="settings.html">Voornaam Achternaam</a></li>
-        <li id="inloggen"><a href="../index.html" id="login">uitloggen</a></li>
+        <li id="registreren"><a href="instellingen.html">Voornaam Achternaam</a></li>
+        <li id="inloggen"><a href="../index.html" id="login">Uitloggen</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="settings.html">Voornaam Achternaam</a></li>
-        <li id="inloggen"><a href="#" id="login-small">uitloggen</a>
+        <li id="inloggen"><a href="#" id="login-small">Uitloggen</a>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -30,27 +31,27 @@
 
   <ul class="side-nav fixed fixed-side-nav">
     <li class="bold">
-      <a href="dashboard.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="dashboard">
+      <a href="dashboard.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="Dashboard">
         <i class="material-icons">dashboard</i>
       </a>
     </li>
     <li class="bold">
-      <a href="notificaties.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="notificaties">
+      <a href="notificaties.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="Notificaties">
         <i class="material-icons">message</i>
       </a>
     </li>
     <li class="bold">
-      <a href="services.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="services">
+      <a href="services.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="Services">
         <i class="material-icons">storage</i>
       </a>
     </li>
     <li class="bold current">
-      <a href="logs.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="logs">
+      <a href="logs.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="Logs">
         <i class="material-icons">archive</i>
       </a>
     </li>
     <li class="bold">
-      <a href="instellingen.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="instellingen">
+      <a href="instellingen.html" class="waves-effect waves-blue tooltipped" data-position="right" data-delay="50" data-tooltip="Instellingen">
         <i class="material-icons">settings</i>
       </a>
     </li>
@@ -61,8 +62,8 @@
       <div class="card">
         <div class="card-content">
           <span class="card-title">
-            logs
-            <i class="material-icons waves-effect waves-blue tooltipped"
+            Logs
+            <i class="material-icons tooltipped"
             data-position="right" data-delay="50"
             data-tooltip="hier is een log van alle events van de verschillende apps en services die je hebt ingesteld">
             help</i>
@@ -84,7 +85,7 @@
                 <td>
                   7,1
                   <a href="//mijn.magister.net/api/personen/<persoon_id>/aanmeldingen/<aanmeldings_id>/cijfers/cijferoverzichtvooraanmelding"
-                  class="secondary-content waves-effect waves-blue tooltipped"
+                  class="secondary-content tooltipped"
                   data-position="left" data-delay="50" data-tooltip="show json">
                     <i class="material-icons">code</i>
                   </a>
@@ -97,7 +98,7 @@
                 <td>
                   <a href="//mijn.magister.net/api/personen/<persoon_id>/bronnen/<bron_id>/content">werkstuk.pdf</a>
                   <a href="//mijn.magister.net/api/personen/<persoon_id>/aanmeldingen/<aanmeldings_id>/cijfers/cijferoverzichtvooraanmelding"
-                  class="secondary-content waves-effect waves-blue tooltipped"
+                  class="secondary-content tooltipped"
                   data-position="left" data-delay="50" data-tooltip="show json">
                     <i class="material-icons">code</i>
                   </a>
@@ -110,7 +111,7 @@
                 <td>
                   Error 500
                   <a target="_blank" href="http://www.google.com/appsstatus"
-                  class="secondary-content waves-effect waves-blue tooltipped"
+                  class="secondary-content tooltipped"
                   data-position="left" data-delay="50" data-tooltip="show google appstatus">
                     <i class="material-icons error">error</i>
                   </a>
@@ -123,7 +124,7 @@
                 <td>
                   Error 301
                   <a target="_blank" href="http://allestoringen.nl/storing/magister"
-                  class="secondary-content waves-effect waves-blue tooltipped"
+                  class="secondary-content tooltipped"
                   data-position="left" data-delay="50" data-tooltip="show storingen">
                     <i class="material-icons error">error</i>
                   </a>
@@ -136,7 +137,7 @@
                 <td>
                   verplaatst van 1e naar 3e uur
                   <a href="//mijn.magister.net/api/personen/<persoon_id>/roosterwijzigingen?tot=2016-07-17&van=2016-07-17"
-                  class="secondary-content waves-effect waves-blue tooltipped"
+                  class="secondary-content tooltipped"
                   data-position="left" data-delay="50" data-tooltip="show json">
                     <i class="material-icons">code</i>
                   </a>
@@ -149,7 +150,7 @@
                 <td>
                   Mailtijd
                   <a href="//mijn.magister.net/api/personen/<persoon_id>/berichten/<bericht_id>"
-                  class="secondary-content waves-effect waves-blue tooltipped"
+                  class="secondary-content tooltipped"
                   data-position="left" data-delay="50" data-tooltip="show json">
                     <i class="material-icons">code</i>
                   </a>

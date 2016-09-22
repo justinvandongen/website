@@ -1,44 +1,14 @@
-/*var googleUser = {};
-var startApp = function() {
-  gapi.load('auth2', function(){
-    // Retrieve the singleton for the GoogleAuth library and set up the client.
-    auth2 = gapi.auth2.init({
-      client_id: '956372344507-0mdgbf0j1ejpsiadg9t75cr5d3j9siua.apps.googleusercontent.com',
-      cookiepolicy: 'single_host_origin',
-      // Request scopes in addition to 'profile' and 'email'
-      //scope: 'additional_scope'
-    });
-    attachSignin(document.getElementById('login-small'));
-    attachSignin(document.getElementById('login'));
-  });
-};
-var user;
-function attachSignin(element) {
-  auth2.attachClickHandler(element, {},
-      function(googleUser) {
-        user = googleUser.getBasicProfile().getName();
-        console.log(user);
-        $('#inloggen').html("<a href=\"#\" onclick=\"signOut();\" id=\"logout\">uitloggen</a>");
-      }, function(error) {
-        alert(JSON.stringify(error, undefined, 2));
-      });
-}
-function currentUser(){
-  console.log(user);
-}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-      $('#inloggen').html("<a href=\"#\" id=\"login\">inloggen</a>");
-    });
-}
-*/
+ ga('create', 'UA-84606648-1', 'auto');
+ ga('send', 'pageview');
+
 function werktNiet(){
-  alert("deze functie werkt niet in de demo");
+  alert("Deze functie werkt niet in de demo.");
 }
 function WIP(){
-  alert("hier word aan gewerkt \n wil je mee helpen? ga dan naar onze github pagina");
+  alert("Hier word nog aan gewerkt \nWil je mee helpen? ga dan naar onze github pagina.");
 }
-// TODO: inloggen google https://developers.google.com/identity/sign-in/web/sign-in
