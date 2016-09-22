@@ -163,7 +163,7 @@ nav .material-icons {
 }
 
 #logo-container{
-  margin-left: 6px;
+  margin-left: 15px;
 }
 
 /*********home page*********/
@@ -192,7 +192,6 @@ nav .material-icons {
 .email-form{
   color: white;
   padding: 48.258px 0 48.258px 0;
-
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
