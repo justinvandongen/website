@@ -368,7 +368,10 @@ i.error{
 }
 
 /*********service detailed*********/
-
+/*quick and hackie TODO:maak mooi*/
+.service-detailed .card.full-size-collection{
+  height:270px;
+}
 /* card-title met foto en info */
 .service-detailed .card-title .foto{
   width: 50px;
