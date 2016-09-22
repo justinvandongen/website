@@ -166,10 +166,6 @@ nav .material-icons {
   margin-left: 6px;
 }
 
-/*********header*********/
-.header{
-  color: #333333;
-}
 /*********home page*********/
 /*container*/
 .parallax-container {
@@ -178,7 +174,14 @@ nav .material-icons {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-/*tekst*/
+.over-ons .container, .email-form .container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*header tekst*/
+#index-banner{
+  background: rgba(0,0,0, .5);
+}
 .section.no-pad-bot {
   padding-top: 55px;
 }
@@ -186,8 +189,36 @@ nav .material-icons {
   width: 100%;
 }
 /*email form*/
-.subscribe{
+.email-form{
+  color: white;
+  padding: 48.258px 0 48.258px 0;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../photos/background2.min.jpg")
+    no-repeat
+    ;
+  background-position: 50% 40%;
+  background-size: cover;
+}
+.email-form .row{
+  margin-bottom: 0;
+}
+.email-form .input-field{
+  margin: 1.14rem 0 0.912rem 0;
+}
+.email-form .subscribe{
   margin-top: 1.65rem;
+}
+.email-form h4{
+  color: white;
+}
+/*over ons*/
+.over-ons .row{
+  margin-bottom: 0;
 }
 /*icons*/
 .icon-block {
