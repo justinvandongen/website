@@ -174,10 +174,6 @@ nav .material-icons {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-.over-ons .container, .email-form .container{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 /*header tekst*/
 #index-banner{
   background: rgba(0,0,0, .5);
@@ -187,6 +183,32 @@ nav .material-icons {
 }
 .parallax-container .section {
   width: 100%;
+}
+
+.over-ons .container, .email-form .container, .wat-is-het .container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*wat is het*/
+.altijd-uptodate img{
+  width: 16%;
+  position: absolute;
+}
+.wat-is-het .altijd-uptodate{
+  height: 300px;
+}
+
+.al-je-favoriete-apps img{
+  width: 70%;
+}
+.wat-is-het .al-je-favoriete-apps{
+  height: 300px;
+  position: relative;
+  background-color: white;
+}
+/*over ons
+.over-ons{
+  background-color: white;
 }
 /*email form*/
 .email-form{
