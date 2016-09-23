@@ -5,5 +5,6 @@ Dit is de statische website voor [magister2apps](http://magister2apps.nl) de sit
 - [x] uitlijning detailed view services verbeteren
 - [ ] betere rondleiding
 - [ ] andere foto homepage
+- [ ] uitleg op homepage wat magister2apps eigenlijk is
 - [ ] mobile support
 - [ ] logo als je logo's maakt mail ons dan
