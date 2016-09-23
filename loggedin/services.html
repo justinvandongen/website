@@ -113,21 +113,48 @@
     </div>
   </div>
 
+  <!--modals-->
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a onclick="add_service();" class="btn-floating btn-large waves-effect waves-light blue">
+      <i class="material-icons">add</i>
+    </a>
+  </div>
+
+  <div id="add_service" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h3 class="center">Service toevoegen</h3>
+
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="../photos/agenda-logo.png" alt="" class="circle">
+          <span class="title">magister2agenda</span>
+          <p>Maakt een url voor Magister Agenda die u in uw mailprogramma <br> kan zetten.</p>
+          <a href="#" class="secondary-content tooltipped"
+          data-position="left" data-delay="50" data-tooltip="Voeg service toe"><i class="material-icons small">add</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <img src="../photos/wunderlist-logo.png" alt="" class="circle">
+          <span class="title">magister2wunderlist</span>
+          <p>Zet al uw Magister Huiswerk automatisch in Wunderlist.</p>
+          <a href="instellingen.html" class="secondary-content tooltipped"
+          data-position="left" data-delay="50" data-tooltip="Uw wunderlist account is nog niet gekoppelt"><i class="material-icons small">warning</i></a>
+        </li>
+      </ul>
+
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn-flat">Sluiten</a>
+    </div>
+  </div>
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script>
-  function show_more(id){
-    $("#"+id).find(".more").show();
-    $("#"+id).find(".show-more").hide();
-    $("#"+id).find(".show-less").show();
-  };
-  function show_less(id){
-    $("#"+id).find(".more").hide();
-    $("#"+id).find(".show-more").show();
-    $("#"+id).find(".show-less").hide();
-  };
+    function add_service(){
+      $('#add_service').openModal();
+    }
   </script>
 
   </body>

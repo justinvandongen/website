@@ -109,20 +109,19 @@
     </div>
   </div>
 
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize.js"></script>
   <script>
   function show_more(id){
-    $("#"+id).find(".more").show();
+    $("#"+id).find(".more").slideDown("slow");
     $("#"+id).find(".show-more").hide();
     $("#"+id).find(".show-less").show();
   };
   function show_less(id){
-    $("#"+id).find(".more").hide();
-    $("#"+id).find(".show-more").show();
-    $("#"+id).find(".show-less").hide();
+    $("#"+id).find(".more").slideUp(500);
+    $("#"+id).find(".show-more").show().delay(500);
+    $("#"+id).find(".show-less").hide().delay(500);
   };
   </script>
 
